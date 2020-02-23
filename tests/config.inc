@@ -8,7 +8,7 @@ $true_db = [
     "dsn" => 'mysql:dbname=molten;host=127.0.0.1;port=3306',
     "host" => '127.0.0.1',
     "user" => 'root',
-    "passwd" => '',
+    "passwd" => '123456',
     "db" => 'molten',
 ];
 
@@ -23,7 +23,7 @@ $fail_db = [
 /* redis */
 $true_redis = [
     "host" => '127.0.0.1',
-    "port" => '6380',
+    "port" => '6379',
 ];
 
 $fail_redis = [

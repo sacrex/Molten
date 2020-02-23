@@ -17,7 +17,6 @@ $redis = new Redis();
 $redis->connect($true_redis['host'], $true_redis['port']);
 $redis->set("test-molten", "thisisakeywewillsetitaslongaspossibleissolonglonglonglonglong");
 $redis->getHost();
-$redis->close();
 
 ?>
 --EXPECTF--

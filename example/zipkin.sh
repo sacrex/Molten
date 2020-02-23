@@ -1,6 +1,6 @@
 #!/bin/bash
-docker=`which docker`
-if [ -z "$docker" ]; then
+
+if [ 1 ]; then
     java=`which java`
     
     if [ -z "$java" ]; then
@@ -18,7 +18,7 @@ if [ -z "$docker" ]; then
     
     if [ -z "$zipkin" ]; then
         java -jar zipkin.jar --logging.level.zipkin=DEBUG 2>&1 >/dev/null &
-    sleep 10
+    sleep 3
     fi
 else
     image=`docker images --format "{{.ID}}:{{.Repository}}"|grep zipkin`
